@@ -1,0 +1,72 @@
+@import url('http://fonts.cdnfonts.com/css/euclid-circular-a');
+@import url('http://fonts.cdnfonts.com/css/roboto');
+
+// fonts
+$roboto: 'Roboto', sans-serif;
+$euclid: 'Euclid Circular A', sans-serif;
+
+// media sizes
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// screens
+
+$screens: (
+    "xs": 0,
+    "sm": $sm,
+    "md": $md,
+    "lg": $lg,
+    "xl": $xl,
+    "xxl": $xxl,
+);
+
+// colors
+
+$colors: (
+    "primary": #FFD339,
+    "white": white,
+    "black": black,
+    "gray": #eaedf2,
+    "gray2":#EDF1F7,
+    "warning": #FFAA00,
+    "success": green,
+    "danger":#FF3D71,
+    "info":#0095FF,
+);
+
+$primary:#FFD339;
+$white:#fff;
+$black:#000;
+$gray:#eaedf2;
+$gray2:#8F9BB3;
+$gray3:#E5E5E5;
+$greenm:#00D68F;
+$black2:#222B45;
+$info:#0095FF;
+// colors
+
+
+
+$grid:12;
+
+$gaps: (
+    "0": 0rem,
+    "1": 0.5rem,
+    "2": 1rem,
+    "3": 1.5rem,
+    "4": 2rem,
+    "5": 2.5rem,
+);
+
+
+// fonts
+
+$font14:14px;
+$font16:16px;
+$font20:20px;
+$font24:24px;
+$font34:34px;

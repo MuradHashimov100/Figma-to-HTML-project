@@ -1,0 +1,231 @@
+.sign_hd_resp{
+   padding: 16px 20px;
+   border: 1px solid $gray3;
+   @include flex(space-between,center);
+   img{
+    width: 78.79px;
+   }
+   span{
+    font-size: $font14;
+   }
+   .btns{
+    display: none !important;
+    gap: 3.2rem;
+    @include flex(center,center);
+    a:first-child{
+        color: $black2;
+        font-size:$font14;
+    }
+   }
+}
+// sign_hd_resp2 start
+.sign_hd_resp2{
+    background-color: $primary;
+    padding-top: 38px;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden !important;
+    gap: 12px;
+    @include flex(space-between,center);
+    margin-bottom: 5.6rem;
+    a{
+        display: inline-block;
+        width: 156px;
+        text-align: center;
+        height: 48px;
+        font-size: $font16;
+        position: relative;
+        top: 10px;
+        background: #FFEA88;
+        border-radius: 8px 8px 0px 0px;
+    }
+    a:first-of-type{
+        background-color: $white ;
+    }
+}
+// sign_hd_resp2 finish
+
+// cont_login 
+
+.cont_login{
+    .right{
+        width: 100%;
+        align-items: center;
+        .as{
+            margin-bottom: 3.2rem;
+            @include flex(center,center);
+            gap: 4.8rem;
+            .radio{
+                display: flex;
+                @include flex(center,center);
+                gap: 1.6rem;
+                input[type="radio"] {
+                    /* remove standard background appearance */
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    width: 25px;
+                    height: 25px;
+                    /* background-color only for content */
+                    background-clip: content-box;
+                    border: 1px solid #C5CEE0;
+                    background-color:rgba(143, 155, 179, 0.16);
+                    border-radius: 50%;
+                  }
+                  input[type="radio"]:checked {
+                     -webkit-appearance: none;
+                     -moz-appearance: none;
+                     appearance: none;
+                     /* create custom radiobutton appearance */
+                     display: inline-block;
+                     width: 25px;
+                     height: 25px;
+                     padding: 3px;
+                     /* background-color only for content */
+                     background-clip: content-box;
+                     border: 3px solid $primary;
+                     accent-color:$primary;
+                     background-color: $primary;
+                     border-radius: 50%;
+                  }
+                 
+                label{
+                    font-size: $font16 !important;
+                    color: $black2;
+                    font-weight: 500;
+                }
+            }
+        }
+        .socials{
+            gap:8px;
+            margin-bottom: 16px;
+            .side{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                background: #FFFFFF;
+                border: 1px solid #C5CEE0;
+                border-radius: 8px;
+                padding: 10px;
+                span{
+                    color: $black2;
+                    font-size: $font14;
+                }
+            }
+        }
+        .or{
+            // justify-content: space-between;
+            gap: 33px;
+            align-items: center;
+            margin-bottom: 1.6rem;
+            div{
+                width: 123px;
+                height: 1px;
+                background-color: $gray3;
+                position: relative;
+                left: 0;
+            }
+            span{
+                font-size: $font14;
+                color: $gray3;
+            }
+        }
+        form{
+            width: 100%;
+            padding: 0 16px;
+            .input-group{
+                gap:8px;
+                position: relative;
+                padding-bottom:2.4rem;
+                label{
+                    font-size: $font14;
+                    color: $black2;
+                }
+                input{
+                    padding: 16px;
+                    background: #F7F9FC;
+                    /* Basic / 400 */
+
+                    border: 1px solid #E4E9F2;
+                    border-radius: 8px;
+                }
+            }
+            p{
+                margin: 0 auto;
+                width: 260px;
+                text-align: center;
+                display: block;
+                font-size: $font14;
+                margin-bottom:2.4rem;
+                line-height: 20px;
+                a{
+                    color: #3366FF;
+                }
+            }
+            a{
+                font-size:$font14;
+                
+            }
+            a.btn{
+                background-color: $primary;
+                padding: 12px;
+                text-align: center;
+                font-size:$font16;
+            }
+            .passhide{
+                width:24px;
+                position: absolute;
+                top: 33px;
+                right: 12px;
+            }
+        }
+    }
+}
+
+// media part
+
+@include lg{
+    .sign_hd_resp{
+        img{
+            width: 152px;
+        }
+        .btns{
+            display: flex !important;
+            gap:3.2rem;
+        }
+        .x{
+            display: none;
+        }
+    }
+    .sign_hd_resp2{
+        display: none !important;
+    }
+    // cont_login
+    .cont_login{
+        padding: 8.2rem 21.7rem;
+        width: 100%;
+        gap:24rem;
+        align-items: center;
+        .left{
+            display: block;
+        }
+        .right{
+            width: 312px;
+            h3{
+                display: block;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                color: #2E3A59;
+                padding-bottom: 2.4rem;
+            }
+        }
+    }
+    .by_header{
+        padding:20px 11.2rem !important;
+        .toggle{
+            display: none;
+        }
+    }
+}
+

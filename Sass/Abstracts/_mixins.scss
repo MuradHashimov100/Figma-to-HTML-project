@@ -1,0 +1,51 @@
+@mixin xs {
+    @media (min-width: map-get($screens, "xs")){
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width: map-get($screens, "sm")){
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: map-get($screens, "md")){
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: map-get($screens, "lg")){
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: map-get($screens, "xl")){
+        @content;
+    }
+}
+@mixin xxl {
+    @media (min-width: map-get($screens, "xxl")){
+        @content;
+    }
+}
+
+// flexbox setiings;
+@mixin flex($justify: null, $align:null) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+// border type
+@mixin border($direction, $width, $style, $color) {
+    border-#{$direction}: $width $style $color;
+  }
+
+// padding;
+
+@mixin padding($val1,$val2:null) {
+    padding: $val1,$val2;
+}
+
+@mixin font-size ($size) {
+    font-size: $size;
+}

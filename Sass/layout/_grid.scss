@@ -1,0 +1,63 @@
+
+
+    // css frid system
+    @include xs{
+        @for $i from 1 to 13 {
+            .col-xs-#{$i} {
+                width: ($i * 100%) / $grid;
+                flex-grow: 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+    @include sm {
+        @for $i from 1 to 13 {
+            .col-sm-#{$i}{
+                width: ($i * 100%) / $grid;
+                flex-grow: 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    @include md {
+        @for $i from 1 to 13 {
+            .col-md-#{$i}{
+               width: ($i * 100%) / $grid;
+                flex-grow: 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    @include lg {
+        @for $i from 1 to 13 {
+            .col-lg-#{$i}{
+                width: ($i * 100%) / $grid;
+                flex-grow: 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    @include xxl {
+        @for $i from 1 to 13 {
+            .col-xxl-#{$i}{
+                 width: ($i * 100%) / $grid;
+                flex-grow: 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    // css gaps
+
+    @each $key, $val in $gaps {
+        .p-#{$key} > * {
+            padding: $val;
+        }
+        .p-#{$key} {
+            margin-left: -$val;
+            margin-right: -$val;
+        }
+    };

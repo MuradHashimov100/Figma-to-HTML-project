@@ -1,0 +1,47 @@
+footer{
+    background-color:#F7F9FC;
+    width: 100%;
+    .row{
+        @include md{
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top:6.3rem;
+        }
+        flex-direction: column;
+        gap: 5.6rem;
+        justify-content: center;
+        .box{
+            flex-direction: column;
+            @include flex(center,center);
+            img{
+                width: 127px;
+            }
+            span{
+                font-size: $font20;
+                line-height: 28px;
+            }
+            a{
+                font-size: $font16;
+                color: #8F9BB3;
+                line-height: 24px;
+                padding-bottom:16px;
+            }
+        }
+        .box:first-of-type{
+            margin-top: 5.6rem;
+        }
+    }
+    .icons{
+        @include flex(center,center);
+        gap: 2.4rem;
+        margin-top: 7.2rem;
+        i:nth-child(2){
+            background-color: #EDF1F7;
+        }
+    }
+    .ft-last{
+        text-align: center;
+        padding: 4.9rem 0;
+        font-size:$font14;
+    }
+}

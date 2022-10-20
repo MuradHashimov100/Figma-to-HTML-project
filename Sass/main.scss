@@ -1,0 +1,51 @@
+@import 'Abstracts/variables';
+@import 'base/reset';
+@import 'Abstracts/mixins';
+@import 'Abstracts/functions';
+@import 'layout/grid';
+@import 'components/colors';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'components/buttons';
+@import 'layout/services';
+@import 'layout/singup';
+@import 'layout/buyer';
+// @import 'layout/buyer';
+
+.container {
+    width: 100%;
+    padding: 0px 5%;
+    margin: 0px auto;
+}
+
+.container-full {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.container2{
+    padding: 0 216px;
+    width:100%;
+    margin:0 auto;
+}
+
+.row{   
+   display: flex;
+}
+.columns{
+    display: flex;
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
